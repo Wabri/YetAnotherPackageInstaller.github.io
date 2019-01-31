@@ -1,37 +1,34 @@
-## Welcome to GitHub Pages
+## Welcome to the Yet Another Package Installer Project
 
-You can use the [editor on GitHub](https://github.com/YetAnotherPackageInstaller/YetAnotherPackageInstaller.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Yapi is a package manager with the main focus on easier user interaction with cross platform support.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Users should be able to run the same commands on different systems and have a predictable result for that package that was installed.
 
-### Markdown
+### Versions
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Yapi is formed in two main versions. There is YAPI for the original debian version where all package scripts are downloaded, and can be run easily. There is also a version called rewrite. The rewrite is working on supporting multiple platforms with a config updater and downloadable install scripts.
 
-```markdown
-Syntax highlighted code block
+### Downloading
+YAPI
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```bash
+wget https://raw.githubusercontent.com/YetAnotherPackageInstaller/YAPI/master/install.sh -O - | sudo bash -
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+```bash
+wget https://raw.githubusercontent.com/YetAnotherPackageInstaller/rewrite/master/install.sh -O - | sudo bash -
+```
 
-### Jekyll Themes
+For more details see the individual repositories.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/YetAnotherPackageInstaller/YetAnotherPackageInstaller.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+### General Usage
+
+Packages can be downloaded by running a command that includes the name of the package to install
+
+```bash
+./yapi.sh install test
+```
 
 ### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+If you are having trouble with YAPI or would like to submit feedback. Please go to the page for the repository.
