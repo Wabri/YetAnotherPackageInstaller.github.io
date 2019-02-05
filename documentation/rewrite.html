@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>YAPI Project</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <style>
+    .blankimg {
+      height: 200px;
+      background: #aaa;
+    }
+    </style>
+  </head>
+  <body>
+    <!--Title Bar-->
+    <div id="top-bar" class="jumbotron text-center" style="margin-bottom:0">
+      <h1>YAPI Project</h1>
+      <p>The cross platform package manager focused on user interaction.</p>
+    </div>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <a class="navbar-brand" href="../index.html">Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/YetAnotherPackageInstaller/YAPI">YAPI Origin</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/YetAnotherPackageInstaller/rewrite">YAPI Rewrite</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../documentation.html">Documentation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--Content-->
+    <div class="container" style="margin-top:30px">
+      <div class="row">
+        <!--About-->
+        <div class="col-sm-12">
+          <h2>Rewrite Documentation</h2>
+          <div>
+            <h5>Installation</h5>
+            <p>To install the rewrite yapi project, run the following command in your home folder:</p>
+            <pre>   wget https://raw.githubusercontent.com/YetAnotherPackageInstaller/rewrite/install.sh -O - | sudo bash -</pre>
+            <p>This script clones the repository, delete all the useless files and set up basic arguments of configuration.</p>
+            <p>You can also clone the repository, edit the configuration by yourself and run the following command:</p>
+            <pre>   ./install.sh</pre>
+
+            <h5>Usage</h5>
+            <p>To use YAPI, run the yapi.sh shell script:</p>
+            <pre>   ./yapi.sh</pre>
+            <p>You can also use the method of using softlinks to a directory in the path to run:</p>
+            <pre>   yapi &lt;command&gt;</pre>
+            <p>Or use the short method with the name of the package you want to install:</p>
+            <pre>   yapi install &lt;package_name&gt;</pre>
+            <p>To call yapi like this:</p>
+            <pre>   yapi &lt;command&gt; &lt;package&gt;</pre>
+
+            <h5>Usage without Clone or Download</h5>
+            <p>If you dont want to download YAPI but you need one of the packages, you can use the package manager to install a package with this command:</p>
+            <pre>   wget https://raw.githubusercontent.com/YetAnotherPackageInstaller/&lt;platform&gt;/master/scripts/&lt;package_name&gt;.sh -O - | sudo bash -</pre>
+
+            <h5>Help</h5>
+            <p>To install one of the packages:</p>
+            <pre>   yapi install &lt;package_to_install&gt;</pre>
+            <p>To run the search method:</p>
+            <pre>   yapi search &lt;[regex]&gt;</pre>
+            <p>To run the GUI:</p>
+            <pre>   yapi</pre>
+            <p>To get a help message:</p>
+            <pre>   yapi help</pre>
+
+            <h5>How To Contribue</h5>
+            <p>Contributions are always welcome, either reporting issues/bugs or forking the repository and then issuing pull requests when you have completed some additional coding that you feel will be beneficial to the main project. If you are interested in contributing in a more dedicated capacity, then please contact us.</p>
+
+            <h5>Creating Package Scripts</h5>
+            <p>Packages can be created by using the format &lt;package_name&gt;.sh. They must follow a specific format to use the description and correctly install.</p>
+            <pre>   &num; &ltdescription of package&gt; - &ltreference site of package&gt;&#10;&#13;    &ltbash commands&gt;</pre>
+            <p>An example of this format is the test.sh package for testing the program:</p>
+            <pre>   &num; Description of package - https://github.com/YetAnotherPackageInstaller &#10;&#13;    echo "Hello world!"</pre>
+            <p>If you want to add one script you <b>need</b> to mantain this standard. This is because the packages list on yapi.py is generated with this information, taken directly from the scripts.</p>
+
+            <h5>Licence</h5>
+            <p>YAPI Rewrite source code is released under the MIT License. Please see the <a href="https://github.com/YetAnotherPackageInstaller/rewrite/blob/master/LICENSE">license</a> for complete licensing information.</p>
+
+            <h5>Contributors</h5>
+            <div>Gabriele Puliti</div>
+            <div>Ian Duncan</div>
+            <br/>
+          </div>
+          <hr class="d-sm-none">
+        </div>
+      </div>
+    </div>
+    <!--Footer-->
+    <div class="jumbotron text-center" style="margin-bottom:0">
+      <p>&copy; 2019 YAPI Project</p>
+    </div>
+
+  </body>
+</html>
